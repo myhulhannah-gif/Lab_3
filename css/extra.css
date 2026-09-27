@@ -1,0 +1,33 @@
+.extra{
+    background-color: var(--color-accent);
+    float: left;
+    width: var(--width-half);
+    height: var(--height-row);
+    padding: var(--space-top-extra-footer) var(--space-side-sm);
+}
+
+.extra-text{
+    float: left;
+}
+
+.extra h3 {
+    font-weight: var(--fw-extrabold);
+}
+
+.btn-record{
+    float: right;
+    padding: 10px 12px;
+    border: 2px solid var(--color-ink);
+    background-color: var(--color-ink);
+    color: var(--color-accent);
+    font-family: var(--font-head);
+    font-weight: var(--fw-extrabold);
+    border-radius: var(--radius-full);
+    transition: background-color 0.2s;
+    margin-top: 20px;
+}
+
+.btn-record:hover{
+    background-color: var(--color-accent);
+    color: var(--color-ink);
+}

@@ -1,0 +1,70 @@
+/* Шрифти з Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700;800&family=Onest:wght@400;500;600&display=swap");
+
+:root {
+  /* ширина сторінки */
+    --width: 1440px;
+    --width-half: 720px;
+    --height-row: 130px; /* висота для Menu, Header, Extra, Footer */
+    --content-width: 1200px;
+
+  /* кольори */
+    --color-ink: #10303A;
+    --color-mint: #DDEFE8;
+    --color-white: #FFFFFF;
+    --color-accent: #FF8A3D;
+    --color-text: #000000;
+
+  /* шрифти */
+    --font-head: "Nunito", Arial, sans-serif;
+    --font-text: "Onest", Arial, sans-serif;
+
+  /* жирність шрифту */
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+    --fw-extrabold: 800;
+
+  /* розміри тексту */
+    --size-h1: 52px;    /* назва Vet Place */
+    --size-h2: 40px;    /* заголовки секцій */
+    --size-h3: 22px;    /* назви послуг */
+    --size-year: 60px;  /* цифри років в історії */
+    --size-p: 18px;     /* основний текст */
+
+  /* відступи */
+    --space-sm: 8px;
+    --space-md: 16px;
+    --space-lg: 20px;
+    --space-xl: 40px;
+    --space-side: 120px;   /* бокові поля для блоків контенту */
+    --space-side-sm: 40px; /* бокові поля для Extra/Footer */
+    --space-top-content: 50px; /*відступ зверху для блоків контенту*/
+    --space-top-extra-footer: 30px;
+
+  /* скруглення кутів */
+    --radius-sm: 12px;
+    --radius-md: 24px;
+    --radius-full: 999px;
+}
+
+body {
+    font-family: var(--font-text);
+    font-weight: var(--fw-regular);
+    font-size: var(--size-p);
+    line-height: 1.6;
+    color: var(--color-text);
+    background: var(--color-white);
+}
+
+h1, h2, h3 {
+    font-family: var(--font-head);
+    font-weight: var(--fw-extrabold);
+    line-height: 1.2;
+    color: var(--color-ink);
+}
+
+h1 { font-size: var(--size-h1); }
+h2 { font-size: var(--size-h2); margin-bottom: var(--space-md);}
+h3 { font-size: var(--size-h3); font-weight: var(--fw-bold); margin-bottom: var(--space-sm);}

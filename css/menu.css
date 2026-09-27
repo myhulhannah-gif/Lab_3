@@ -1,0 +1,30 @@
+.menu{
+    width: var(--width-half);
+    float: left;
+    background-color: var(--color-mint);
+    height: var(--height-row);
+    padding-left: var(--space-side-sm);
+    padding-top: 35px;
+}
+
+.menu ul li{
+    display: inline-block;
+    margin-right: var(--space-lg);
+}
+
+.menu ul li a{
+    display: inline-block;
+    padding: 10px 18px;
+    border: 3px solid var(--color-ink);
+    border-radius: var(--radius-full);
+    font-family: var(--font-head);
+    font-weight: var(--fw-extrabold);
+    font-size: var(--size-p);
+    color: var(--color-ink);
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.menu ul li a:hover{
+    background-color: var(--color-ink);
+    color: var(--color-accent);
+}

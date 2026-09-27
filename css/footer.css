@@ -1,0 +1,16 @@
+.footer{
+    background-color: var(--color-ink);
+    float: right;
+    width: var(--width-half);
+    height: var(--height-row);
+    padding: var(--space-top-extra-footer) var(--space-side-sm);
+}
+
+.footer-brand{
+    color: var(--color-white);
+    font-weight: var(--fw-extrabold);
+}
+
+.footer p{
+    color: var(--color-white);
+}

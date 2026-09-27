@@ -1,0 +1,20 @@
+.header{
+    background-color: var(--color-ink);
+    height: var(--height-row);
+    float: right;
+    width: var(--width-half);
+    padding-left: var(--space-side-sm);
+    padding-top: 30px;
+}
+
+.header h1{
+    font-size: var(--size-h1);
+    color: var(--color-white);
+}
+
+.header p{
+    color: var(--color-white);
+    font-size: var(--size-p);
+    font-family: var(--font-text);
+    font-weight: var(--fw-regular);
+}
