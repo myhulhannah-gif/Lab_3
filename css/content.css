@@ -1,7 +1,5 @@
 .content-box {
-    clear: both;
-    padding-top: var(--space-top-content);
-    padding-left: var(--space-side);
+    padding: var(--space-top-content) var(--space-side);
 }
 
 .content-box p{
@@ -24,15 +22,12 @@
 }
 
 .content-box--about {
-    height: 460px;
     background-image: linear-gradient(to right, var(--color-white) 5%, transparent 100%), url("../img/doctor_and_dog.jpg");
     background-size: cover;
 }
 
 /*Послуги*/
-
 .content-box--services {
-    height: 700px;
     background-color: var(--color-mint);
 }
 
@@ -63,15 +58,17 @@
 }
 
 /* Контакти */
-
 .content-box--contacts {
-    height: 660px;
     background-color: var(--color-white);
 }
 
+.contacts-wrap{
+    display: flex;
+    gap: var(--space-xl);
+}
+
 .contacts-info{
-    width: 560px;
-    float: left;
+    flex: 1;
 }
 
 .contacts-item {
@@ -88,13 +85,10 @@
 }
 
 .contacts-form{
-    width: 560px;
-    height: 420px;
-    float: left;
+    flex: 1;
     background-color: var(--color-mint);
     border-radius: var(--radius-md);
-    padding: 30px 50px;
-    margin-left: 100px;
+    padding: 20px 40px;
 }
 
 .contacts-form h3{
@@ -120,7 +114,7 @@
 .contacts-form button{
     background-color: var(--color-ink);
     display: block;
-    margin: 25px auto;
+    margin: 2px auto;
     padding: 12px 18px;
     border-radius: var(--radius-full);
     color: var(--color-white);
@@ -222,23 +216,23 @@
 }
 
 /* Історія створення */
-
 .content-box--history{
     background-color: var(--color-mint);
-    height: 680px;
 }
 
 .history-item{
-    overflow: hidden;
+    display: flex;
+    gap: var(--space-sm);
     border-bottom: 2px solid var(--color-ink);
     padding-top: var(--space-md);
     max-width: var(--content-width);
-
+    align-items: center;
 }
 
 .history-year{
-    float: left;
-    width: 180px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 3em;
     font-family: var(--font-head);
     font-weight: var(--fw-extrabold);
     font-size: var(--size-year);
@@ -252,5 +246,306 @@
 }
 
 .history-item p {
-    margin-left: 180px;
+    flex: 1;
 }
+
+/* Статистика */
+.content-box--stats {
+    background-color: var(--color-white);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-lg);
+}
+
+.stat-item {
+    padding: var(--space-lg);
+    background-color: var(--color-mint);
+    border-radius: var(--radius-md);
+}
+
+.stat-head {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--space-md);
+    margin-bottom: var(--space-sm);
+}
+
+.stat-label {
+    font-weight: var(--fw-medium);
+    color: var(--color-ink);
+}
+
+.stat-percent {
+    font-family: var(--font-head);
+    font-weight: var(--fw-extrabold);
+    color: var(--color-ink);
+}
+
+.stat-item progress {
+    display: block;
+    width: 100%;
+    height: 12px;
+    border-radius: var(--radius-full);
+    overflow: hidden;
+}
+
+.stat-item progress::-webkit-progress-bar {
+    background-color: var(--color-white);
+}
+
+.stat-item progress::-webkit-progress-value {
+    border-radius: var(--radius-full);
+    background: linear-gradient(to right, #FFB677, var(--color-accent));
+}
+
+/* Новини */
+.content-box--news {
+    background-color: var(--color-mint);
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-lg);
+}
+
+.news-card {
+    display: flex;
+    flex-direction: column;
+    padding: var(--space-lg) 30px;
+    background-color: var(--color-white);
+    border-radius: var(--radius-md);
+    box-shadow: 0 4px 12px rgba(16, 48, 58, 0.15);    
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.news-card:hover {
+    transform: translateY(-4px); 
+    box-shadow: 0 8px 20px rgba(16, 48, 58, 0.25);
+}
+
+.news-card p {
+    flex: 1;
+}
+.news-badge {
+    align-self: flex-start;
+    padding: 4px 12px;
+    margin-bottom: var(--space-md);
+    border-radius: var(--radius-full);
+    background-color: var(--color-accent);
+    color: var(--color-ink);
+    font-size: 14px;
+    font-weight: var(--fw-semibold);
+}
+
+.news-date {
+    margin-bottom: var(--space-sm);
+    font-size: 14px;
+    color: var(--color-text);
+}
+
+.news-link {
+    align-self: flex-end;
+    font-family: var(--font-head);
+    font-weight: var(--fw-extrabold);
+    color: var(--color-ink);
+    transition: color 0.2s;
+}
+
+.news-link:hover {
+    color: var(--color-accent);
+    text-decoration: underline;
+
+}
+
+/* Відгуки */
+.content-box--reviews {
+    background-color: var(--color-white);
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-lg);
+}
+
+.review-card {
+    display: flex;
+    flex-direction: column;
+    padding: var(--space-lg);
+    background-color: var(--color-mint);
+    border-radius: var(--radius-md);
+}
+
+.review-card blockquote {
+    flex: 1;
+}
+
+.review-card p {
+    text-align: left;
+    font-style: italic;
+}
+
+.review-author {
+    display: flex;
+    align-items: center; /* центр по вертикалі */
+    gap: var(--space-md);
+}
+
+.review-avatar {
+    display: flex;
+    justify-content: center; /* центр по горизонталі */
+    align-items: center;
+    width: 3em; /* ширина = 3 розміри шрифту */
+    height: 3em;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background-color: var(--color-ink);
+    color: var(--color-white);
+    font-family: var(--font-head);
+    font-weight: var(--fw-extrabold);
+    font-size: var(--size-h3);
+}
+
+.review-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.review-name {
+    font-weight: var(--fw-bold);
+    color: var(--color-ink);
+}
+
+.review-stars {
+    color: var(--color-accent);
+    letter-spacing: 2px;
+}
+
+.stars-5::before {
+    content: "\2605\2605\2605\2605\2605";
+}
+
+.stars-4::before {
+    content: "\2605\2605\2605\2605\2606";
+}
+
+/* Команда */
+.content-box--team {
+    background-color: var(--color-mint);
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-lg);
+}
+
+.team-card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: var(--color-white);
+    border-radius: var(--radius-md);
+    box-shadow: 0 4px 12px rgba(16, 48, 58, 0.15);
+}
+
+.team-card img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    object-position: center 20%;
+}
+
+.team-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: var(--space-lg);
+}
+
+.team-badge {
+    align-self: flex-start;
+    padding: 4px 12px;
+    margin-bottom: var(--space-sm);
+    border-radius: var(--radius-full);
+    background-color: var(--color-ink);
+    color: var(--color-white);
+    font-size: 14px;
+    font-weight: var(--fw-semibold);
+}
+
+.team-body p {
+    flex: 1;
+    text-align: left;
+    font-size: 16px;
+    margin-bottom: var(--space-sm);
+}
+
+.team-social {
+    display: flex;
+    gap: var(--space-md);
+}
+
+.team-social a {
+    font-weight: var(--fw-bold);
+    color: var(--color-ink);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    transition: color 0.2s;
+}
+
+.team-social a:hover {
+    color: var(--color-accent);
+}
+
+/* Галерея */
+.content-box--gallery {
+    background-color: var(--color-white);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* колонки підбираються самі: кожна не вужча за 300px */
+    gap: var(--space-lg);
+}
+
+.gallery-item {
+    position: relative;  /* підпис всередині */
+    overflow: hidden;
+    border-radius: var(--radius-md);
+}
+
+.gallery-item img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    transition: transform 0.4s;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.08);
+}
+
+.gallery-item figcaption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: var(--space-md);
+    background: linear-gradient(to top, rgba(16, 48, 58, 0.85), transparent);
+    color: var(--color-white);
+    font-family: var(--font-head);
+    font-weight: var(--fw-bold);
+}
+
+.gallery-item:hover figcaption {
+    opacity: 1;
+}
+

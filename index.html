@@ -8,175 +8,400 @@
 </head>
 <body>
     <div class="container">
+        <div class="top-row">
+            <header class="header">
+                <h1>Vet Place</h1>
+                <p>Ветеринарна клініка. Цілодобово, без вихідних.</p>
+            </header>
 
-        <div class="menu">
-            <ul>
-                <li><a href="#about">Про клініку</a></li>
-                <li><a href="#services">Послуги</a></li>
-                <li><a href="#contacts">Контакти</a></li>
-                <li><a href="#history">Історія створення</a></li>
-            </ul>
+            <nav class="menu">
+                    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                    <label for="menu-toggle" class="menu-btn">
+                        <span></span>
+                    </label>
+                    <ul>
+                        <li><a href="#about">Про клініку</a></li>
+                        <li><a href="#services">Послуги</a></li>
+                        <li><a href="#contacts">Контакти</a></li>
+                        <li><a href="#history">Історія створення</a></li>
+                    </ul>
+            </nav>
         </div>
-
-        <div class="header">
-            <h1>Vet Place</h1>
-            <p>Ветеринарна клініка. Цілодобово, без вихідних.</p>
-        </div>
-
         
-        <div class="content-box content-box--about">
-            <h2 id="about">Про клініку</h2>
-            <p>
-                Ми лікуємо так, як лікували б власного кота: спокійно, без зайвих призначень і з поясненням кожного кроку.<br>
-                У клініці працюють 9 лікарів різних спеціалізацій: терапевти, хірурги, стоматологи та кардіолог. Власна лабораторія видає результати аналізів того самого дня, а цілодобовий стаціонар дозволяє тримати тварину під наглядом стільки, скільки потрібно для одужання. 
+        <main>
+            <section class="content-box content-box--about" id="about">
+                <h2>Про клініку</h2>
+                <p>
+                    Ми лікуємо так, як лікували б власного кота: спокійно, без зайвих призначень і з поясненням кожного кроку.<br>
+                    У клініці працюють 9 лікарів різних спеціалізацій: терапевти, хірурги, стоматологи та кардіолог. Власна лабораторія видає результати аналізів того самого дня, а цілодобовий стаціонар дозволяє тримати тварину під наглядом стільки, скілька потрібно для одужання. 
                 Ми завжди попереджаємо про вартість лікування заздалегідь і пояснюємо, навіщо потрібне кожне призначення – жодних прихованих послуг у чеку. 
-            </p>
-            <p class="lead-text">Переваги звернення саме до нас:</p>
-            <ul>
-                <li>Цілодобово – невідкладна допомога о будь-якій годині доби, включно зі святами;</li>
-                <li>Без черг – запис на конкретний час, очікування в приймальні до 10 хвилин;</li>
-                <li>Виїзд додому – огляд і вакцинація для тварин, яких важко перевозити.</li>
-            </ul>
-        </div>
+                </p>
+                <p class="lead-text">Переваги звернення саме до нас:</p>
+                <ul>
+                    <li>Цілодобово – невідкладна допомога о будь-якій годині доби, включно зі святами;</li>
+                    <li>Без черг – запис на конкретний час, очікування в приймальні до 10 хвилин;</li>
+                    <li>Виїзд додому – огляд і вакцинація для тварин, яких важко перевозити.</li>
+                </ul>
+            </section>
 
-        <div class="content-box content-box--services">
-            <h2 id="services">Послуги</h2>
-            <p>Нижче наведено перелік напрямів роботи клініки з орієнтовною вартістю. Точну ціну лікар називає після огляду.</p>
+            <section class="content-box content-box--services" id="services">
+                <h2>Послуги</h2>
+                <p>Нижче наведено перелік напрямів роботи клініки з орієнтовною вартістю. Точну ціну лікар називає після огляду.</p>
 
-            <a href="#" class="service-list">
-                <h3>Терапія та діагностика</h3>
-                <p>Огляд, УЗД, рентген і аналізи крові. Підходить як для планового чекапу, так і для термінового звернення. <span class="price">від 350 грн</span></p>
-            </a>
+                <article class="service-list">
+                    <h3>Терапія та діагностика</h3>
+                    <p>Огляд, УЗД, рентген і аналізи крові. Підходить як для планового чекапу, так і для термінового звернення. <span class="price">від 350 грн</span></p>
+                </article>
 
-            <a href="#" class="service-list">
-                <h3>Хірургія</h3>
-                <p>Планові й термінові операції будь-якої складності, включно зі стерилізацією та видаленням новоутворень. <span class="price">від 1200 грн</span></p>
-            </a>
+                <article class="service-list">
+                    <h3>Хірургія</h3>
+                    <p>Планові й термінові операції будь-якої складності, включно зі стерилізацією та видаленням новоутворень. <span class="price">від 1200 грн</span></p>
+                </article>
             
-            <a href="#" class="service-list">
-                <h3>Вакцинація</h3>
-                <p>Щеплення від основних інфекційних хвороб і оформлення міжнародного ветпаспорта. Підбираємо графік індивідуально. <span class="price">від 450 грн</span></p>
-            </a>
+                <article class="service-list">
+                    <h3>Вакцинація</h3>
+                    <p>Щеплення від основних інфекційних хвороб і оформлення міжнародного ветпаспорта. Підбираємо графік індивідуально. <span class="price">від 450 грн</span></p>
+                </article>
 
-            <a href="#" class="service-list">
-                <h3>Стоматологія</h3>
-                <p>Чистка та видалення зубного каменю під седацією, огляд стану ясен і зубів. Регулярна чистка запобігає втраті зубів. <span class="price">від 900 грн</span></p>
-            </a>
+                <article class="service-list">
+                    <h3>Стоматологія</h3>
+                    <p>Чистка та видалення зубного каменю під седацією, огляд стану ясен і зубів. Регулярна чистка запобігає втраті зубів. <span class="price">від 900 грн</span></p>
+                </article>
 
-            <a href="#" class="service-list">
-                <h3>Виїзд додому</h3>
-                <p>Огляд і щеплення без візиту до клініки. Лікар приїжджає у зручний для вас час. <span class="price">від 500 грн</span></p>
-            </a>
+                <article class="service-list">
+                    <h3>Виїзд додому</h3>
+                    <p>Огляд і щеплення без візиту до клініки. Лікар приїжджає у зручний для вас час. <span class="price">від 500 грн</span></p>
+                </article>
 
-            <a href="#" class="service-list">
-                <h3>Стаціонар</h3>
-                <p>Цілодобове спостереження, крапельниці та реабілітація після операцій чи важких станів. <span class="price">від 600 грн / доба</span></p>
-            </a>
+                <article class="service-list">
+                    <h3>Стаціонар</h3>
+                    <p>Цілодобове спостереження, крапельниці та реабілітація після операцій чи важких станів. <span class="price">від 600 грн / доба</span></p>
+                </article>
 
-        </div>
+            </section>
 
-        <div class="content-box content-box--contacts">
-            <h2 id="contacts">Контакти</h2>
-            <p>Зв’яжіться будь-яким зручним способом або одразу залиште заявку у формі – адміністратор передзвонить протягом 15 хвилин і підбере зручний час прийому.</p>
+            <section class="content-box content-box--contacts" id="contacts">
+                <h2>Контакти</h2>
+                <p>Зв’яжіться будь-яким зручним способом або одразу залиште заявку у формі – адміністратор передзвонить протягом 15 хвилин і підбере зручний час прийому.</p>
 
-            <div class="contacts-info">
+                <div class="contacts-wrap">
+                    <div class="contacts-info">
+                        <div class="contacts-item">
+                            <span class="contacts-label">Адреса</span>
+                            <p>м. Київ, вул. Велика Васильківська, 12</p>
+                        </div>
 
-                <div class="contacts-item">
-                    <span class="contacts-label">Адреса</span>
-                    <p>м. Київ, вул. Велика Васильківська, 12</p>
-                </div>
+                        <div class="contacts-item">
+                            <span class="contacts-label">Телефон</span>
+                            <p>+38 (050) 123-45-67</p>
+                        </div>
 
-                <div class="contacts-item">
-                    <span class="contacts-label">Телефон</span>
-                    <p>+38 (050) 123-45-67</p>
-                </div>
+                        <div class="contacts-item">
+                            <span class="contacts-label">Пошта</span>
+                            <p>hello@vetplace.ua</p>
+                        </div>
 
-                <div class="contacts-item">
-                    <span class="contacts-label">Пошта</span>
-                    <p>hello@vetplace.ua</p>
-                </div>
+                        <div class="contacts-item">
+                            <span class="contacts-label">Графік</span>
+                            <p>Цілодобово, без вихідних</p>
+                        </div>
 
-                <div class="contacts-item">
-                    <span class="contacts-label">Графік</span>
-                    <p>Цілодобово, без вихідних</p>
-                </div>
-
-            </div>
+                    </div>
             
-            <div>
-                <form method="post" class="contacts-form" id="form">
-                    <h3>Запис на прийом</h3>
-                    <label>Ім’я
-                        <input type="text" id="name" required placeholder="Як до вас звертатися?">
-                    </label>
+                    <form method="post" class="contacts-form" id="form">
+                        <h3>Запис на прийом</h3>
+                        <label>Ім’я
+                            <input type="text" id="name" required placeholder="Як до вас звертатися?">
+                        </label>
 
-                    <label>Телефон
-                        <input type="tel" id="phone" required placeholder="+38 000 000 00 00">
-                    </label>
+                        <label>Телефон
+                            <input type="tel" id="phone" required placeholder="+38 000 000 00 00">
+                        </label>
 
-                    <label>Кличка тварини
-                        <input type="text" required placeholder="Наприклад, Луна">
-                    </label>
+                        <label>Кличка тварини
+                            <input type="text" required placeholder="Наприклад, Луна">
+                        </label>
 
-                    <button type="submit">Записатися</button>
-                </form>
-            </div>
+                        <button type="submit">Записатися</button>
+                    </form>
+                </div>
+            </section>
+
+            <section class="content-box content-box--history" id="history">
+                <h2>Історія створення</h2>
+                <p>За понад десять років маленький кабінет виріс у клініку повного циклу. Ось як це відбувалося.</p>
+
+                <article class="history-item">
+                    <span class="history-year">2014</span>
+                    <p>Лікарка Марина Коваль приймає перших пацієнтів в орендованій кімнаті на 20 м². 
+                        Обладнання складалося з одного столу для оглядів і невеликої аптечки, а записувались через дзвінок на особистий номер лікарки. 
+                        Попри скромний початок, за перший рік клієнтами стали понад 300 родин із сусідніх будинків.
+                    </p>
+                </article>
+
+                <article class="history-item">
+                    <span class="history-year">2017</span>
+                    <p>Відкриваємо стаціонар і власну лабораторію, команда виростає до п'яти лікарів. 
+                        Тепер аналізи не треба возити в інше місто – результат готовий того самого дня. 
+                        Саме тоді з'явилась цілодобова чергова зміна для термінових випадків.
+                    </p>
+                </article>
+
+                <article class="history-item">
+                    <span class="history-year">2020</span>
+                    <p>Переїжджаємо у велику будівлю й переходимо на цілодобовий режим роботи. 
+                        У новому приміщенні з'явилися окрема операційна, кімната для стоматології та зона очікування для тварин, яких краще тримати подалі одна від одної. 
+                        Кількість лікарів подвоюється, а разом з нею – і кількість напрямів допомоги.
+                    </p>
+                </article>
+
+                <article class="history-item">
+                    <span class="history-year">2026</span>
+                    <p>Понад 20 000 вилікованих улюбленців і власна виїзна служба для тих, кого важко привезти до клініки. 
+                        Клініка отримує нову назву – Vet Place – і оновлений простір для прийому. 
+                        Попереду відкриття другого філіалу та розширення команди хірургів.
+                    </p>
+                </article>
+
+            </section>
+
+            <section class="content-box content-box--stats" id="stats">
+                <h2>Результати нашої роботи</h2>
+                <p>Цифри, на які ми спираємося щодня.</p>
+                
+                <div class="stats-grid"> 
+
+                    <article class="stat-item">
+                        <div class="stat-head">
+                            <span class="stat-label">Прийоми без черги</span>
+                            <span class="stat-percent">95%</span>
+                        </div>
+                        <progress value="95" max="100"></progress>
+                    </article>
+
+                    <article class="stat-item">
+                        <div class="stat-head">
+                            <span class="stat-label">Пацієнти, які одужали після лікування</span>
+                            <span class="stat-percent">98%</span>
+                        </div>
+                        <progress value="98" max="100"></progress>
+                    </article>
+
+                    <article class="stat-item">
+                        <div class="stat-head">
+                            <span class="stat-label">Клієнти, які повертаються до нас</span>
+                            <span class="stat-percent">92%</span>
+                        </div>
+                        <progress value="92" max="100"></progress>
+                    </article>
+
+                    <article class="stat-item">
+                        <div class="stat-head">
+                            <span class="stat-label">Власники, які радять нас друзям</span>
+                            <span class="stat-percent">90%</span>
+                        </div>
+                        <progress value="90" max="100"></progress>
+                    </article>
+                </div>
+            </section>
+
+            <section class="content-box content-box--news" id="news">
+                <h2>Новини та поради</h2>
+                <p>Корисні матеріали від наших лікарів та новини клініки.</p>
+
+                <div class="news-grid">
+
+                    <article class="news-card">
+                        <span class="news-badge">Поради / Вакцинація</span>
+                        <time class="news-date" datetime="2026-10-12">12 жовтня 2026</time>
+                        <h3>Коли робити щеплення цуценяті</h3>
+                        <p>Перша вакцинація можлива вже у два місяці. Розповідаємо, які щеплення потрібні й чому не варто відкладати візит до лікаря.</p>
+                        <a href="#" class="news-link">Читати далі →</a>
+                    </article>
+
+                    <article class="news-card">
+                        <span class="news-badge">Новини / Обладнання</span>
+                        <time class="news-date" datetime="2026-10-05">5 жовтня 2026</time>
+                        <h3>У клініці з'явився новий апарат УЗД</h3>
+                        <p>Тепер діагностика стала точнішою та швидшою: результат лікар бачить одразу під час огляду, без повторних візитів.</p>
+                        <a href="#" class="news-link">Читати далі →</a>
+                    </article>
+
+                    <article class="news-card">
+                        <span class="news-badge">Здоров'я / Стоматологія</span>
+                        <time class="news-date" datetime="2026-09-28">28 вересня 2026</time>
+                        <h3>Як доглядати за зубами улюбленця</h3>
+                        <p>Регулярна чистка запобігає втраті зубів. Пояснюємо, як часто потрібен огляд стоматолога й що робити вдома.</p>
+                        <a href="#" class="news-link">Читати далі →</a>
+                    </article>
+                </div>
+            </section>
+
+            <section class="content-box content-box--reviews" id="reviews">
+                <h2>Відгуки клієнтів</h2>
+                <p>Що кажуть власники тварин, які вже звернулися до нас.</p>
+
+                <div class="reviews-grid">
+
+                    <article class="review-card">
+                        <blockquote>
+                            <p>Прийшли з кішкою вночі, і лікар прийняв нас без черги. Усе пояснили, жодних зайвих призначень.</p>
+                        </blockquote>
+                        <div class="review-author">
+                            <span class="review-avatar">ОК</span>
+                            <div class="review-info">
+                                <span class="review-name">Олена Кравченко</span>
+                                <span class="review-stars stars-5" role="img" aria-label="Оцінка 5 з 5"></span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="review-card">
+                        <blockquote>
+                            <p>Робили операцію нашому лабрадору. Дякуємо за турботу й дзвінки після виписки, пес уже бігає.</p>
+                        </blockquote>
+                        <div class="review-author">
+                            <span class="review-avatar">АМ</span>
+                            <div class="review-info">
+                                <span class="review-name">Андрій Міщан</span>
+                                <span class="review-stars stars-5" role="img" aria-label="Оцінка 5 з 5"></span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="review-card">
+                        <blockquote>
+                            <p>Зручно, що можна викликати лікаря додому: двох котів возити до клініки було б складно.</p>
+                        </blockquote>
+                        <div class="review-author">
+                            <span class="review-avatar">ІС</span>
+                            <div class="review-info">
+                                <span class="review-name">Ірина Строцька</span>
+                                <span class="review-stars stars-4" role="img" aria-label="Оцінка 4 з 5"></span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="content-box content-box--team" id="team">
+                <h2>Наша команда</h2>
+                <p>Лікарі, які піклуються про ваших улюбленців щодня й щоночі.</p>
+
+                <div class="team-grid">
+
+                    <article class="team-card">
+                        <img src="img/vet1.png" alt="Марина Сергієнко, лікар-терапевт">
+                        <div class="team-body">
+                            <span class="team-badge">Терапевт</span>
+                            <h3>Марина Сергієнко</h3>
+                            <p>Засновниця клініки. Понад 12 років допомагає тваринам і пояснює власникам кожен крок лікування.</p>
+                            <div class="team-social">
+                                <a href="#">Instagram</a>
+                                <a href="#">Telegram</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="team-card">
+                        <img src="img/vet2.png" alt="Олександр Гнатюк, лікар-хірург">
+                        <div class="team-body">
+                            <span class="team-badge">Хірург</span>
+                            <h3>Олександр Гнатюк</h3>
+                            <p>Виконує планові та термінові операції, спеціалізується на м'яких тканинах і травмах.</p>
+                            <div class="team-social">
+                                <a href="#">Instagram</a>
+                                <a href="#">Telegram</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="team-card">
+                        <img src="img/vet3.png" alt="Софія Левчук, лікар-стоматолог">
+                        <div class="team-body">
+                            <span class="team-badge">Стоматолог</span>
+                            <h3>Софія Левчук</h3>
+                            <p>Проводить чистку зубів під седацією й навчає власників, як доглядати за ротовою порожниною вдома.</p>
+                            <div class="team-social">
+                                <a href="#">Instagram</a>
+                                <a href="#">Telegram</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="team-card">
+                        <img src="img/vet4.png" alt="Дмитро Шевченко, лікар-кардіолог">
+                        <div class="team-body">
+                            <span class="team-badge">Кардіолог</span>
+                            <h3>Дмитро Шевченко</h3>
+                            <p>Діагностує захворювання серця за допомогою УЗД і підбирає лікування для тварин будь-якого віку.</p>
+                            <div class="team-social">
+                                <a href="#">Instagram</a>
+                                <a href="#">Telegram</a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+            <section class="content-box content-box--gallery" id="gallery">
+                <h2>Галерея</h2>
+                <p>Наші пацієнти та простір клініки: тут ми щодня оглядаємо, лікуємо й доглядаємо за тваринами. 
+                    Кожен куточок облаштований так, щоб улюбленцям і їхнім власникам було спокійно й комфортно.</p>
+
+                <div class="gallery-grid">
+
+                    <figure class="gallery-item">
+                        <img src="img/Gallery1.png" alt="Лікарка оглядає золотистого ретривера">
+                        <figcaption>Уважний огляд кожного пацієнта</figcaption>
+                    </figure>
+
+                    <figure class="gallery-item">
+                        <img src="img/Gallery2.png" alt="Рудий кіт на руках у ветеринара">
+                        <figcaption>Спокійна атмосфера на прийомі</figcaption> 
+                    </figure>
+
+                    <figure class="gallery-item">
+                        <img src="img/Gallery3.png" alt="Світлий кабінет ветеринарної клініки">
+                        <figcaption>Сучасне обладнання для діагностики</figcaption>
+                    </figure>
+
+                    <figure class="gallery-item">
+                        <img src="img/Gallery4.png" alt="Двоє цуценят у приймальні клініки">
+                        <figcaption>Маленькі пацієнти</figcaption>
+                    </figure>
+
+                    <figure class="gallery-item">
+                        <img src="img/Gallery5.png" alt="Ветеринар робить щеплення собаці">
+                        <figcaption>Безпечна вакцинація</figcaption>
+                    </figure>
+
+                    <figure class="gallery-item">
+                        <img src="img/Gallery6.png" alt="Затишні боксі стаціонару для тварин">
+                        <figcaption>Догляд цілодобово</figcaption>
+                    </figure>
+
+                </div>
+            </section>
+        </main>
+
+        <div class="bottom-row">
+            <aside class="extra">
+                <div class="extra-text">
+                    <h3>Знижка 20% для нових клієнтів</h3>
+                    <p>Перший огляд зі знижкою при онлайн-записі. 
+                    <br>Пропозиція діє для нових пацієнтів до кінця місяця.</p>
+                </div>
+                <a href="#form" class="btn-record">Записатися →</a>
+            </aside>
+
+            <footer class="footer">
+                <h3 class="footer-brand">Vet Place</h3>
+                <p>© 2026 Ветеринарна клініка «Vet Place»</p>
+                <p>м. Київ, вул. Велика Васильківська, 12 · hello@vetplace.ua</p>
+            </footer>
         </div>
-
-        <div class="content-box content-box--history">
-            <h2 id="history">Історія створення</h2>
-            <p>За понад десять років маленький кабінет виріс у клініку повного циклу. Ось як це відбувалося.</p>
-
-            <div class="history-item">
-                <span class="history-year">2014</span>
-                <p>Лікарка Марина Коваль приймає перших пацієнтів в орендованій кімнаті на 20 м². 
-                    Обладнання складалося з одного столу для оглядів і невеликої аптечки, а записувались через дзвінок на особистий номер лікарки. 
-                    Попри скромний початок, за перший рік клієнтами стали понад 300 родин із сусідніх будинків.
-                </p>
-            </div>
-
-            <div class="history-item">
-                <span class="history-year">2017</span>
-                <p>Відкриваємо стаціонар і власну лабораторію, команда виростає до п'яти лікарів. 
-                    Тепер аналізи не треба возити в інше місто – результат готовий того самого дня. 
-                    Саме тоді з'явилась цілодобова чергова зміна для термінових випадків.
-                </p>
-            </div>
-
-            <div class="history-item">
-                <span class="history-year">2020</span>
-                <p>Переїжджаємо у велику будівлю й переходимо на цілодобовий режим роботи. 
-                    У новому приміщенні з'явилися окрема операційна, кімната для стоматології та зона очікування для тварин, яких краще тримати подалі одна від одної. 
-                    Кількість лікарів подвоюється, а разом з нею – і кількість напрямів допомоги.
-                </p>
-            </div>
-
-            <div class="history-item">
-                <span class="history-year">2026</span>
-                <p>Понад 20 000 вилікованих улюбленців і власна виїзна служба для тих, кого важко привезти до клініки. 
-                    Клініка отримує нову назву – Vet Place – і оновлений простір для прийому. 
-                    Попереду відкриття другого філіалу та розширення команди хірургів.
-                </p>
-            </div>
-
-        </div>
-
-        <div class="extra">
-            <div class="extra-text">
-                <h3>Знижка 20% для нових клієнтів</h3>
-                <p>Перший огляд зі знижкою при онлайн-записі. 
-                <br>Пропозиція діє для нових пацієнтів до кінця місяця.</p>
-            </div>
-            <a href="#form" class="btn-record">Записатися →</a>
-        </div>
-
-        <div class="footer">
-            <h3 class="footer-brand">Vet Place</h3>
-            <p>© 2026 Ветеринарна клініка «Vet Place»</p>
-            <p>м. Київ, вул. Велика Васильківська, 12 · hello@vetplace.ua</p>
-        </div>
-
     </div>
-
 </body>
 </html>

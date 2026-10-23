@@ -1,10 +1,11 @@
 .header{
+    flex: 1;
+    display: flex;
     background-color: var(--color-ink);
-    height: var(--height-row);
-    float: right;
-    width: var(--width-half);
-    padding-left: var(--space-side-sm);
-    padding-top: 30px;
+    padding: var(--space-md) var(--space-side-sm);
+    flex-direction: column;
+    justify-content: center;
+
 }
 
 .header h1{

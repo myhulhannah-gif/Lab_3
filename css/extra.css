@@ -1,21 +1,23 @@
 .extra{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: var(--color-accent);
-    float: left;
-    width: var(--width-half);
-    height: var(--height-row);
     padding: var(--space-top-extra-footer) var(--space-side-sm);
-}
-
-.extra-text{
-    float: left;
+    flex-wrap: wrap;
+    gap: var(--space-md) var(--space-md);
 }
 
 .extra h3 {
     font-weight: var(--fw-extrabold);
 }
 
+.extra p{
+    text-align: justify;
+}
+
 .btn-record{
-    float: right;
     padding: 10px 12px;
     border: 2px solid var(--color-ink);
     background-color: var(--color-ink);
@@ -24,7 +26,6 @@
     font-weight: var(--fw-extrabold);
     border-radius: var(--radius-full);
     transition: background-color 0.2s;
-    margin-top: 20px;
 }
 
 .btn-record:hover{

@@ -1,15 +1,14 @@
 .menu{
-    width: var(--width-half);
-    float: left;
     background-color: var(--color-mint);
-    height: var(--height-row);
-    padding-left: var(--space-side-sm);
-    padding-top: 35px;
+    padding: var(--space-md) var(--space-side-sm);
+    display: flex;
+    align-items: center;
 }
 
-.menu ul li{
-    display: inline-block;
-    margin-right: var(--space-lg);
+.menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-md) var(--space-md);
 }
 
 .menu ul li a{
@@ -27,4 +26,50 @@
 .menu ul li a:hover{
     background-color: var(--color-ink);
     color: var(--color-accent);
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.menu-btn {
+    display: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.menu-btn span,
+.menu-btn span::before,
+.menu-btn span::after {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: var(--color-ink);
+    transition-duration: 0.25s;
+}
+
+.menu-btn span::before {
+    content: "";
+    top: -8px;
+}
+
+.menu-btn span::after {
+    content: "";
+    top: 8px;
+}
+
+.menu-toggle:checked ~ .menu-btn span {
+    transform: rotate(45deg);
+}
+
+.menu-toggle:checked ~ .menu-btn span::before {
+    top: 0;
+    transform: rotate(0);
+}
+
+.menu-toggle:checked ~ .menu-btn span::after {
+    top: 0;
+    transform: rotate(90deg);
 }

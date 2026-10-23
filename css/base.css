@@ -4,8 +4,6 @@
 :root {
   /* ширина сторінки */
     --width: 1440px;
-    --width-half: 720px;
-    --height-row: 130px; /* висота для Menu, Header, Extra, Footer */
     --content-width: 1200px;
 
   /* кольори */
